@@ -1,0 +1,15 @@
+<section id="products">
+  <div class="container">
+    <h5 class="fs-2 fw-bold">Animales</h5>
+    <!-- ANIMAL CARD -->
+    <div class="card" style="width: 18rem;" *ngFor="let animal of animals">
+      <img src="{{ animal.image_link }}" class="card-img-top" alt="{{ animal.name }}">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Nombre: {{ animal.name }}</li>
+        <li class="list-group-item">Habitat: {{ animal.habitat }}</li>
+        <li class="list-group-item">Dieta: {{ animal.diet }}</li>
+        <li class="list-group-item">Localizacion: {{ animal.geo_range }}</li>
+      </ul>
+    </div>
+  </div>
+</section>

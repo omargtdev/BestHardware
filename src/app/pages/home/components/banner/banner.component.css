@@ -1,0 +1,57 @@
+.phrase {
+  font-size: 21px;
+  font-family: 'Ubuntu', 'Montserrat', 'sans-serif';
+  display: flex;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.typed-cursor {
+  margin-bottom: 6px;
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+  0%{opacity: 0;}
+  50%{opacity: .3;}
+  100%{opacity: 1;}
+}
+
+.text-uppercase {
+  font-weight: 700;
+  font-size: 82px;
+}
+
+
+.characteristic {
+  margin-right: 15px;
+
+}
+
+.characteristic i {
+  color: var(--color1);
+}
+
+
+.banner-img {
+  max-height: 820px;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.carousel-caption {
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 350px) {
+  .d-ssm-block {
+    /* Display super small block */
+    position: relative;
+    bottom: 15px;
+    display: block !important;
+  }
+}

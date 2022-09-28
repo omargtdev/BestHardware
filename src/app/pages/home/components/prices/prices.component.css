@@ -1,0 +1,123 @@
+#pricing {
+    padding: 90px 0;
+    background-image: url(https://showwp.com/demos/seomarkt/upload/section_bg_02.png);
+    background-position-x: center;
+    background-position-y: top;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(108, 135, 132);
+}
+
+
+#pricing-title {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+#pricing-title h5 {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 0;
+    color: #979797;
+    margin: 0;
+}
+
+#pricing-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+#pricing-title h3 {
+    padding: 10px 0 0;
+    margin: 0;
+    font-size: 26px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+#pricing-row > div {
+  border-radius: 50%;
+  width: 350px;
+}
+
+.pricing-box-06 {
+    text-align: center;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    min-height: 350px;
+}
+
+.col-sm-12 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pricing-box-06-head {
+    padding: 40px 0 15px;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.pricing-box-06-head h3 {
+    color: #ffffff;
+    padding: 25px 0 10px;
+    font-weight: bold;
+    font-size: 44px;
+    margin: 0;
+}
+
+.pricing-box-06-head h4 {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-box-06-body {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pricing-box-06-head h3 sup {
+    font-size: 15px;
+}
+
+.pricing-box-06-body ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0%;
+}
+
+.pricing-box-06-body ul li {
+    color: #ffffff;
+    padding: 2px 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    list-style: none;
+    line-height: 26px;
+    
+}
+
+.pricing-box-06 .btn {
+    padding: 5px 20px 10px;
+    font-size: 13px;
+    background-color: transparent !important;
+    border-right: 0 solid rgba(255, 255, 255, 0.5) !important;
+    border-left: 0 solid rgba(255, 255, 255, 0.5) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-top: 0 solid rgba(255, 255, 255, 0.3) !important;
+    margin-top: 5px;
+    border-radius: 0;
+    font-weight: bold;
+}
+

@@ -1,0 +1,28 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+  --color1: #F1773D;
+  --color2: #233B94;
+  --color3: #78D5F5;
+  --color4: #F5CBB3;
+  --color5: #C27661;
+  --color6: #979797;
+ 
+  --color-white: #FFFFFF;
+  --color-dark: #000000;
+}
+
+.line {
+    border-color: var(--color1);
+    border-width: 1px;
+    border-style: dashed;
+    width: 100px;
+    margin: 20px auto 40px;
+
+}
+
+.navbar-brand {
+  font-weight: 700;
+}

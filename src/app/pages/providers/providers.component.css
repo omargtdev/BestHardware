@@ -1,0 +1,9 @@
+#proveedores {
+  min-height: 100vh;
+}
+
+#proveedores,
+.table {
+  margin-top: 50px;
+}
+

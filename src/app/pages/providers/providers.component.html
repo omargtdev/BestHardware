@@ -1,0 +1,25 @@
+<section id="proveedores">
+    <div class="container">
+        <h2>Proveedores VIP</h2>
+        <table class="table">
+            <thead>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido paterno</th>
+                <th>Apellido materno</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let provider of providers">
+                    <td>{{provider.idregistro}}</td>
+                    <td>{{provider.nombre}}</td>
+                    <td>{{provider.apellidopaterno}}</td>
+                    <td>{{provider.apellidomaterno}}</td>
+                    <td>{{provider.edad}}</td>
+                    <td>{{provider.ciudad}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
