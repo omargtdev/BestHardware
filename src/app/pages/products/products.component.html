@@ -1,15 +1,22 @@
 <section id="products">
   <div class="container">
-    <h5 class="fs-2 fw-bold">Animales</h5>
-    <!-- ANIMAL CARD -->
-    <div class="card" style="width: 18rem;" *ngFor="let animal of animals">
-      <img src="{{ animal.image_link }}" class="card-img-top" alt="{{ animal.name }}">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Nombre: {{ animal.name }}</li>
-        <li class="list-group-item">Habitat: {{ animal.habitat }}</li>
-        <li class="list-group-item">Dieta: {{ animal.diet }}</li>
-        <li class="list-group-item">Localizacion: {{ animal.geo_range }}</li>
-      </ul>
-    </div>
+    <h5 class="fs-2 fw-bold">Productos</h5>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col" *ngFor="let product of products">
+        <!-- PRODUCT CARD -->
+        <div class="card">
+          <img src="{{ baseUrl }}/{{ product.ProductImageUrl }}" class="card-img-top" alt="{{ product.ProductName }}">
+          <div class="card-body">
+            <h5 class="card-title">{{product.ProductName}}</h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">ID: <span class="fw-bold">{{ product.ProductID }}</span></li>
+            <li class="list-group-item">Precio: <span class="fw-bold">S/. {{ product.ProductPrice}}</span></li>
+            <li class="list-group-item">Stock: {{ product.ProductStock }}</li>
+          </ul>
+        </div>
+      </div>
+  </div>
   </div>
 </section>
+

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AnimalService } from 'src/app/services/animal.service';
-import { Animal } from 'src/entities';
+import { API } from 'src/app/API';
+import { ProductService } from 'src/app/services/product.service';
+import { Product } from 'src/entities';
 
 @Component({
   selector: 'app-products',
@@ -8,16 +9,17 @@ import { Animal } from 'src/entities';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  animals: Array<Animal>
+  products: Array<Product>;
+  baseUrl: string;
 
-  constructor(private animalService: AnimalService) {
-    this.animals = []
+  constructor(private productService: ProductService) {
+    this.products = [];
+    this.baseUrl = API.baseUrl;
   }
 
   ngOnInit(): void {
-    this.animalService.animals.subscribe(res => {
-      console.log(res)
-      this.animals = JSON.parse(JSON.stringify(res));
+    this.productService.products.subscribe(res => {
+      this.products = JSON.parse(JSON.stringify(res));
     })
   }
 

@@ -2,13 +2,3 @@
   margin-top: 50px;
 }
 
-#products .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 20px;
-}
-
-.container h5 {
-  grid-column: 1/4;
-  margin-bottom: 30px;
-}

@@ -47,11 +47,35 @@
   transform: translateY(-50%);
 }
 
-@media (min-width: 350px) {
+@media (max-width: 991px) {
+  .carousel-caption h5 {
+    font-size: 3.5em; 
+  }
+}
+
+@media (min-width: 500px) {
   .d-ssm-block {
     /* Display super small block */
     position: relative;
     bottom: 15px;
     display: block !important;
   }
+
+}
+
+@media (max-width: 500px) {
+  .banner-img {
+    filter: brightness(100%);
+  }
+}
+
+@media (max-width: 730px) {
+  .carousel-caption {
+    top: 60%;
+  }
+
+  .carousel-caption h5 {
+    font-size: 2.5em;
+  }
+
 }

@@ -84,3 +84,9 @@
   font-size: 14px;
   color: #979797;
 }
+
+@media (max-width: 991px) {
+  .service-list .row {
+    flex-direction: column;
+  }
+}
