@@ -1,0 +1,27 @@
+<section id="sedes">
+    <div class="container">
+        <h2>Sedes</h2>
+        <table class="table">
+            <thead>
+                <th>Id</th>
+                <th>Nombre de Sede</th>
+                <th>Dirección</th>
+                <th>Telefono</th>
+                <th>Gerente</th>
+                <th>Trabajadores </th>
+                <th>Correo electrónico</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let campus of campus">
+                    <td>{{campus.idsede}}</td>
+                    <td>{{campus.nombresede}}</td>
+                    <td>{{campus.direccion}}</td>
+                    <td>{{campus.telefono}}</td>
+                    <td>{{campus.gerente}}</td>
+                    <td>{{campus.trabajadores}}</td>
+                    <td>{{campus.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>

@@ -15,6 +15,7 @@ import { ProvidersComponent } from './pages/providers/providers.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './pages/products/products.component';
 import { MainFooterComponent } from './pages/shared/main-footer/main-footer.component';
+import { SedesComponent } from './pages/home/components/sedes/sedes.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MainFooterComponent } from './pages/shared/main-footer/main-footer.comp
     ClientsComponent,
     ProvidersComponent,
     ProductsComponent,
-    MainFooterComponent
+    MainFooterComponent,
+    SedesComponent
   ],
   imports: [
     BrowserModule,
